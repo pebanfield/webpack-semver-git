@@ -8,7 +8,7 @@ var path = require('path'),
 var OUTPUT_DIR = path.join(__dirname, '../dist'),
     FIXTURES = path.join(__dirname, './fixtures');
 
-describe('WebpackMd5Hash', function () {
+describe('WebpackSemverGit', function () {
 
     beforeEach (function (done) {
         rimraf(OUTPUT_DIR, done);
