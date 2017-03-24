@@ -1,9 +1,10 @@
 var gitRevision = require('git-revision');
-var pjson = require('./package.json');
+var pjson;
 
 module.exports = WebpackSemverGit;
 
-function WebpackSemverGit() {
+function WebpackSemverGit(projectRoot) {
+  pjson = require(projectRoot+'/package.json');
 }
 
 WebpackSemverGit.prototype.apply = function(compiler) {
